@@ -15,7 +15,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 
 ## Overview
 ### Screenshot
-![Screenshot of the webpage](./images/Web%20capture_20-5-2023_221925_127.0.0.1.jpeg)
+![Screenshot of the webpage](./images/Web%20capture_20-5-2023_23559_127.0.0.1.jpeg)
 
 ### Links
 - [Github repository](https://github.com/Emmanuel-Afrifa/chat-app-css-illustration)
