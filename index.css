@@ -11,20 +11,41 @@ body {
 }
 
 #big-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     width: 1350px;
     height: 650px;
-    background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
-    background-position: left top, right bottom;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 350px 680px, 400px;
-    background-color:  hsl(276, 55%, 52%, 0.1);
-
-    /*border-bottom-right-radius: 100px;
-    border-bottom-left-radius: 100px;*/
-    border-radius: 0px 190px; 
     display: grid;
     place-items: center;
 }
+
+#main-container::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-bottom-right-radius: 160px;
+    border-bottom-left-radius: 160px;
+    width: 300px;
+    height: 600px;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
+
+#main-container::after {
+    content: "";
+    position: absolute;
+    background-color: hsl(276, 55%, 52%, 0.1);
+    border-top-left-radius: 35rem;
+    width: 300px;
+    height: 530px;
+    top: 120px;
+    right: 0;
+    z-index: -1;
+}
+
 
 #main-container {
     width: 900px;
@@ -280,16 +301,42 @@ body {
         min-height: 900px;
     }
     
+    
     #big-container {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%);
         width: 350px;
         height: 900px;
-        background: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%)), white;
-        background-position: left top, right bottom;
-        background-repeat: no-repeat, no-repeat;
-        background-size: 150px 500px, cover;
-        border-bottom-right-radius: 50px; 
         display: grid;
         place-items: center;
+    }
+
+    #main-container::before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+        border-bottom-right-radius: 160px;
+        border-bottom-left-radius: 0px;
+        width: 150px;
+        height: 600px;
+        top: 0px;
+        left: 0;
+        z-index: -1;
+    }
+
+    #main-container::after {
+        content: "";
+        position: absolute;
+        background-color: hsl(276, 55%, 52%, 0.1);
+        border-top-left-radius: 160px;
+        width: 170px;
+        height: 530px;
+        bottom: 0px;
+        top: 370px;
+        right: 0;
+        z-index: -1;
     }
     
     #main-container {
