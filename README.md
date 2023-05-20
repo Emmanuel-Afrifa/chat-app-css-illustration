@@ -18,8 +18,8 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 ![Screenshot of the webpage](./images/Web%20capture_20-5-2023_221925_127.0.0.1.jpeg)
 
 ### Links
-- [Github repository](#)
-- [Deployed site](#)
+- [Github repository](https://github.com/Emmanuel-Afrifa/chat-app-css-illustration)
+- [Deployed site](https://chat-app-frontend-sol.netlify.app/)
 
 ## Process
 ### Tools Used
